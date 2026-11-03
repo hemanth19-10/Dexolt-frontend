@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    color: #1f2937;
+    background: #f7f7fb;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply font-sans antialiased text-slate-800 bg-violet-50/40;
+    margin: 0;
+    min-width: 320px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  button, a, input, select, textarea { transition: all 180ms ease; }
+  button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    @apply outline-none ring-2 ring-brand-blue ring-offset-2;
+  }
+}
+
+@layer components {
+  .page-shell { @apply mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8; }
+  .surface { @apply rounded-2xl border border-violet-100 bg-white shadow-sm; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-brand-green; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-xl bg-brand-blue px-5 py-3 font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:bg-violet-700; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-xl border border-violet-100 bg-white px-5 py-3 font-semibold text-slate-700 hover:border-brand-blue hover:text-brand-blue; }
+  .field { @apply w-full rounded-xl border border-violet-100 bg-violet-50/50 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-blue focus:bg-white focus:ring-2 focus:ring-brand-blue/20; }
+  .section-heading { @apply mb-8 flex items-end justify-between gap-4; }
+  .theme-toggle { @apply inline-flex items-center gap-2 rounded-xl border border-violet-100 bg-violet-50 px-3 py-2 text-sm font-semibold text-violet-700 hover:border-brand-blue hover:bg-violet-100; }
+}
+
+@layer utilities {
+  .dark .surface { @apply border-slate-800 bg-slate-900 text-slate-100; }
+  .dark .field { @apply border-slate-700 bg-slate-800 text-slate-100 focus:bg-slate-900; }
+  .dark .field::placeholder { color: #64748b; }
+  .dark .btn-secondary { @apply border-slate-700 bg-slate-900 text-slate-200 hover:border-violet-400 hover:text-violet-300; }
+  .dark .theme-toggle { @apply border-slate-700 bg-slate-800 text-violet-200 hover:bg-slate-700; }
+  .dark nav { @apply border-slate-800 bg-slate-950/95; }
+  .dark footer { @apply bg-black; }
+  .dark .bg-white { @apply bg-slate-900; }
+  .dark .bg-slate-50 { @apply bg-slate-950; }
+  .dark .bg-slate-100 { @apply bg-slate-900; }
+  .dark .bg-violet-50, .dark .bg-violet-50\/40 { @apply bg-slate-950; }
+  .dark .bg-violet-100 { @apply bg-violet-950; }
+  .dark .border-violet-100, .dark .border-slate-200, .dark .border-slate-200\/80 { @apply border-slate-800; }
+  .dark .text-slate-900 { @apply text-white; }
+  .dark .text-slate-800, .dark .text-slate-700 { @apply text-slate-100; }
+  .dark .text-slate-600, .dark .text-slate-500, .dark .text-gray-500 { @apply text-slate-400; }
+  .dark .text-gray-700 { @apply text-slate-300; }
+  .dark .hover\:bg-slate-50:hover { @apply bg-slate-800; }
+  .dark .bg-gray-200 { @apply bg-slate-800; }
+  .dark thead { @apply bg-violet-950 text-violet-100; }
+  .dark input, .dark select, .dark textarea { color-scheme: dark; }
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-violet-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-blue rounded-full;
+}

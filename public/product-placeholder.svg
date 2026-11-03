@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Dexolt product image unavailable</title>
+  <desc id="desc">A simple Dexolt placeholder illustration</desc>
+  <rect width="800" height="600" fill="#eef4f2"/>
+  <circle cx="400" cy="270" r="145" fill="#d7ebe4"/>
+  <path d="M342 370h116c12 0 22-10 22-22V195c0-12-10-22-22-22H342c-12 0-22 10-22 22v153c0 12 10 22 22 22Z" fill="#1456d9"/>
+  <path d="M365 173h70v-28c0-9-7-16-16-16h-38c-9 0-16 7-16 16v28Z" fill="#087f5b"/>
+  <rect x="345" y="230" width="110" height="72" rx="10" fill="#fff" opacity=".9"/>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#1456d9">dexolt.</text>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#49615a">Product image coming soon</text>
+</svg>
