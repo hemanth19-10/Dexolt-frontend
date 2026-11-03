@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src="src\assets\LogoDexolt.png" alt="Dexolt" className="h-10 w-10 rounded-xl shadow-lg shadow-black/20" />
+          <img src="src/images/LogoDexolt.png" alt="Dexolt" className="h-10 w-10 rounded-xl shadow-lg shadow-black/20" />
           <span className="text-xl font-black tracking-tight text-white">Dexolt<span className="text-orange-300">.</span></span>
         </Link>
 
